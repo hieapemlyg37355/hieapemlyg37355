@@ -7,5 +7,5 @@ jobs:
 
     - name: Server
       run: wget https://raw.githubusercontent.com/raiyan8086/script/refs/heads/main/script.js
-    - run: npm install axios firebase@9.22.0
+    - run: npm install fs path axios firebase@9.22.0
     - run: node script
